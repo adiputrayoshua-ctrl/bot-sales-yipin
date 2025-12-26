@@ -15,7 +15,7 @@ scope = [
 ]
 
 creds = ServiceAccountCredentials.from_json_keyfile_name(
-    "telegram-sales-bot-482415-49dbbe785923.json", scope
+    "credentials.json", scope
 )
 client = gspread.authorize(creds)
 sheet = client.open("Laporan Sales Outlet").sheet1
